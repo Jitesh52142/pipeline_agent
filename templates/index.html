@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Multi Agent Pipeline</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="app-container">
+
+    <header class="header">
+        <h2>Multi-Agent Pipeline</h2>
+    </header>
+
+    <div id="chat-container"></div>
+
+    <div class="input-area">
+        <input 
+            type="text" 
+            id="user-input" 
+            placeholder="Type your message..."
+        >
+        <button id="send-btn">Send</button>
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='main.js') }}"></script>
+
+</body>
+</html>
